@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book List</title>
+  <link rel="stylesheet" href="books.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fictional Book List</h1>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search by title...">
+      <select id="sort">
+        <option value="title">Sort by Title</option>
+        <option value="author">Sort by Author</option>
+        <option value="year">Sort by Year</option>
+      </select>
+      <button id="prev">Previous</button>
+      <button id="next">Next</button>
+    </div>
+    <div id="book-list"></div>
+    <div id="error-message" style="display:none;">Error loading data. Please try again later.</div>
+  </div>
+  <script src="books.js"></script>
+</body>
+</html>
